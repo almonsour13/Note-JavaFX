@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="838.0" styleClass="main-container" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="517.0" prefWidth="187.0" styleClass="side-bar-container" stylesheets="@css/style.css">
+         <children>
+            <BorderPane prefHeight="60.0" prefWidth="177.0" styleClass="logo-container" stylesheets="@css/style.css">
+               <center>
+                  <Label prefHeight="62.0" prefWidth="144.0" styleClass="logo" stylesheets="@css/style.css" text="AMS" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Poor Richard" size="30.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <VBox prefHeight="418.0" prefWidth="177.0" styleClass="menu-list-container" stylesheets="@css/style.css">
+               <children>
+                  <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="177.0">
+                     <styleClass>
+                        <String fx:value="menu-item" />
+                        <String fx:value="active" />
+                     </styleClass>
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="130.0" text="   Note">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-icon">
+                                 <image>
+                                    <Image url="@icon/description_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="177.0" styleClass="menu-item">
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="130.0" text="   Reminder">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-icon">
+                                 <image>
+                                    <Image url="@icon/notifications_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="177.0" styleClass="menu-item">
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="130.0" text="   Archive">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-icon">
+                                 <image>
+                                    <Image url="@icon/archive_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="177.0" styleClass="menu-item">
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="130.0" text="   Trash">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-icon">
+                                 <image>
+                                    <Image url="@icon/delete_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="177.0" styleClass="menu-item">
+               <graphic>
+                  <Label prefHeight="25.0" prefWidth="130.0" text="   Settings">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-icon">
+                           <image>
+                              <Image url="@icon/settings_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <BorderPane layoutX="689.0" layoutY="14.0" prefHeight="36.0" prefWidth="144.0" styleClass="top-bar-container" stylesheets="@css/style.css">
+         <center>
+            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="124.0" styleClass="add-note" stylesheets="@css/style.css" text="Add Note" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <TextField layoutX="405.0" layoutY="14.0" prefHeight="36.0" prefWidth="278.0" promptText="Search notes" styleClass="search-notes" stylesheets="@css/style.css" />
+      <Label layoutX="199.0" layoutY="14.0" prefHeight="36.0" prefWidth="206.0" text="Note" textFill="#3c3c3c">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="199.0" layoutY="75.0" prefHeight="99.0" prefWidth="197.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="144.0" text="Albert Einstein">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="40.0" maxWidth="187.0" prefHeight="45.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Imagination is more important than knowledge." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="199.0" layoutY="185.0" prefHeight="99.0" prefWidth="197.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="144.0" text="Mahatma Gandhi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="40.0" maxWidth="187.0" prefHeight="45.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Be the change that you wish to see in the world." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="199.0" layoutY="297.0" prefHeight="126.0" prefWidth="197.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="144.0" text="Maya Angelou">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="40.0" maxWidth="187.0" prefHeight="92.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="409.0" layoutY="75.0" prefHeight="125.0" prefWidth="197.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="144.0" text="Martin Luther King Jr.">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="40.0" maxWidth="187.0" prefHeight="74.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="409.0" layoutY="213.0" prefHeight="110.0" prefWidth="203.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="144.0" text="Nelson Mandela">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="40.0" maxWidth="187.0" prefHeight="60.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Education is the most powerful weapon which you can use to change the world." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="409.0" layoutY="336.0" prefHeight="110.0" prefWidth="203.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="8.0" maxWidth="187.0" prefHeight="92.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="621.0" layoutY="75.0" prefHeight="92.0" prefWidth="203.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="17.0" maxWidth="187.0" prefHeight="60.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Success is not final, failure is not fatal: It is the courage to continue that counts." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="621.0" layoutY="182.0" prefHeight="84.0" prefWidth="203.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="17.0" maxWidth="187.0" prefHeight="60.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less." wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="621.0" layoutY="284.0" prefHeight="125.0" prefWidth="197.0" styleClass="note-card" stylesheets="@css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="144.0" text="Mark Twain">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="40.0" maxWidth="187.0" prefHeight="74.0" prefWidth="168.0" styleClass="note-content" stylesheets="@css/style.css" text="The two most important days in your life are the day you are born and the day you find out why." wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
